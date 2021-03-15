@@ -9,8 +9,6 @@ services:
     restart: unless-stopped
     ports:
       - "8200:5000"
-    volumes:
-      - ./ws/config:/config      
     environment:
       - PUID=1000
       - PGID=1000
